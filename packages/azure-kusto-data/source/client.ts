@@ -216,7 +216,8 @@ export class KustoClient {
         let kustoResponse = null;
         try {
             if (executionType === ExecutionType.Query) {
-                kustoResponse = new KustoResponseDataSetV2(response as V2Frames);
+                //kustoResponse = new KustoResponseDataSetV2(response as V2Frames);
+                kustoResponse = new KustoResponseDataSetV1(response as V1);
             } else {
                 kustoResponse = new KustoResponseDataSetV1(response as V1);
             }
