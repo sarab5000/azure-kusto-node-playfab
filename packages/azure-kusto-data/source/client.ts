@@ -43,7 +43,7 @@ export class KustoClient {
         this.defaultDatabase = this.connectionString.initialCatalog;
         this.endpoints = {
             [ExecutionType.Mgmt]: `${this.cluster}/v1/rest/mgmt`,
-            [ExecutionType.Query]: `${this.cluster}/v2/rest/query`,
+            [ExecutionType.Query]: `${this.cluster}/v1/rest/query`,
             [ExecutionType.Ingest]: `${this.cluster}/v1/rest/ingest`,
             [ExecutionType.QueryV1]: `${this.cluster}/v1/rest/query`,
         };
