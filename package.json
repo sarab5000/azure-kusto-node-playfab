@@ -40,5 +40,6 @@
     "dependencies": {
         "@lerna-lite/cli": "^1.0.5",
         "@lerna-lite/run": "^1.0.5"
-    }
+    },
+    "version": "2.0.0"
 }
